@@ -29,7 +29,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #444;
+    background: var(--main-color);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -43,8 +43,8 @@ html::-webkit-scrollbar-thumb:hover {
 
 .container {
     /* Padding for mobile view */
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 2rem;
+    padding-right: 3rem;
     margin-left: auto;
     margin-right: auto;
 }

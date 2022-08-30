@@ -1,0 +1,51 @@
+.schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    margin-bottom: 9rem;
+
+    .btn {
+        position: absolute;
+        font-size: 1.875rem;
+        background-color: var(--main-color);
+        box-shadow: 0px 5px 20px rgba(14, 29, 39, 0.3);
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        width: 460px;
+        padding: 2.3rem 0;
+        color: var(--white);
+        text-align: center;
+
+        &:first-child {
+            right: 52%;
+        }
+        
+        &:last-child {
+            left: 52%;
+            background-color: var(--white);
+            color: var(--black);
+        }
+    }
+}
+@media (max-width:991px) {
+    .schedule{
+        margin-top: 2rem;
+        flex-direction: column;
+        .btn{
+            position: unset;
+        }
+    }
+}
+@media (max-width:540px){
+    .schedule{
+        .btn{
+            width: 80%;
+            font-size: 1.7rem;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.hero {
+    height: calc(100vh - 97px);
+    background-image: url('../imgaes/Stars.png'), linear-gradient(90deg, #0E1D27 0%, #0D5779 207.6%);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .container {
+        color: var(--white);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: .3rem;
+        h1 {
+            font-size: 3.75rem;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 1.8rem;
+            line-height: 1.5;
+            position: relative;
+
+            span {
+                color: var(--main-color);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: var(--main-color);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                left: -20px;
+                top: 10px;
+            }
+        }
+
+        .avatars {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            .box {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                img {
+                    width: 54px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    border: 3px solid var(--main-color);
+                }
+                h3{
+                    font-size: 1rem;
+                }
+                span{
+                    font-size:.8rem ;
+                    color: #C4C4C4;
+                    ;
+                }
+            }
+        }
+    }
+}
+@media (max-width:991px) {
+    .hero{
+        padding: 2rem 0;
+        height: auto;
+        .container{
+            .avatars{
+                flex-direction: column;
+            }
+        }
+    }
+}

@@ -1,6 +1,8 @@
 nav {
     background-image: linear-gradient(90deg, #0E1D27 0%, #0D5779 207.6%);
     max-height: 97px;
+    // position: fixed;
+    // width: 100%;
 
     .container {
         padding: .93rem 0;
@@ -9,6 +11,7 @@ nav {
         align-items: center;
         color: var(--white);
         gap: 1rem;
+
         .toggle {
             display: none;
 
@@ -31,9 +34,10 @@ nav {
         }
 
         .links {
-            img{
+            img {
                 display: none;
             }
+
             ul {
                 display: flex;
                 align-items: center;
@@ -55,7 +59,8 @@ nav {
                     }
                 }
             }
-            .close{
+
+            .close {
                 display: none;
             }
         }
@@ -88,7 +93,7 @@ nav {
                 display: block;
             }
 
-            .links{
+            .links {
                 position: fixed;
                 top: 0;
                 left: -105%;
@@ -96,13 +101,15 @@ nav {
                 width: 35%;
                 background-color: var(--black);
                 z-index: 101;
-                img{
+
+                img {
                     padding: 1rem;
                     margin: 0 auto;
                     display: block;
                     width: 85%;
                     display: block;
                 }
+
                 ul {
                     // display: none;
                     flex-direction: column;
@@ -111,35 +118,41 @@ nav {
                     padding-top: 3rem;
                     // height: 100%;
                 }
-                .close{
+
+                .close {
                     display: block;
                     padding: .8rem;
                     text-align: right;
-                    i{
+
+                    i {
                         cursor: pointer;
                         font-size: 1.3rem;
-                        &:hover{
+
+                        &:hover {
                             color: var(--main-color);
                         }
                     }
                 }
             }
+
             .btn {
                 display: none;
             }
         }
     }
 }
-@media (max-width:560px){
-nav{
-    .container{
-        .links{
-            width: 70%;
+
+@media (max-width:560px) {
+    nav {
+        .container {
+            .links {
+                width: 70%;
+            }
         }
     }
 }
-}
-.overlay{
+
+.overlay {
     width: 100%;
     height: 100vh;
     background-color: var(--black);
