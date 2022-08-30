@@ -330,4 +330,70 @@ nav .container .btn:hover {
     width: 80%;
     font-size: 1.7rem;
   }
+}
+.roadmap {
+  margin-bottom: 4rem;
+}
+.roadmap .container h2 {
+  font-size: 3.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.roadmap .container h2::after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  height: 3px;
+  width: 35%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.roadmap .container table {
+  border: 1px solid rgba(14, 29, 39, 0.2);
+  margin: 0 auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.roadmap .container table td,
+.roadmap .container table th {
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(14, 29, 39, 0.2);
+  text-align: left;
+}
+.roadmap .container table td i,
+.roadmap .container table th i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.roadmap .container table td i:hover,
+.roadmap .container table th i:hover {
+  color: var(--main-color);
+}
+.roadmap .container table tr:nth-child(even),
+.roadmap .container table th {
+  background-color: #FAFAFB;
+  font-weight: 500;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.roadmap .container table .shadowText {
+  color: #777;
 }/*# sourceMappingURL=style.css.map */
