@@ -57,3 +57,22 @@ async function displayData(){
   }
   }
   displayData();
+
+  // Loading Page
+  window.onload = () => {
+
+    fadeOut();
+
+}
+// loader 
+function loader() {
+    document.querySelector('.loading').classList.add('active-loading');
+}
+function loaderTwo() {
+  document.querySelector('.loading').classList.add('active-loading-2');
+}
+
+function fadeOut() {
+    setTimeout(loader, 2000);
+    setTimeout(loaderTwo, 3000);
+}
