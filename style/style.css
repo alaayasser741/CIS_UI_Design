@@ -466,6 +466,8 @@ footer .container .newsletter form input[type=submit] {
 }
 footer .container .blog {
   line-height: 2;
+  display: flex;
+  flex-direction: column;
 }
 footer .container .blog a {
   color: var(--white);
