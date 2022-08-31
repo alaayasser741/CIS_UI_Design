@@ -25,7 +25,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--black);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -65,6 +65,11 @@ html::-webkit-scrollbar-thumb:hover {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+@media (min-width: 1500px) {
+  .container {
+    width: 1470px;
   }
 }
 :root {
@@ -410,7 +415,7 @@ footer {
 }
 footer .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 2rem;
 }
 footer .container .info {
@@ -489,7 +494,7 @@ footer .container .partener {
 }
 .footer .container .social {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .footer .container .social a i {
   font-size: 2rem;
@@ -510,7 +515,7 @@ footer .container .partener {
 .header {
   height: 750px;
   margin-bottom: 9rem;
-  background: url("../../imgaes/Blue-circles.png") no-repeat left, url("../../imgaes/circle-shapes.png") no-repeat left;
+  background: url("../imgaes/Blue-circles.png") no-repeat left, url("../imgaes/circle-shapes.png") no-repeat left;
   background-position-y: 25%, 75%;
 }
 .header .containerr {
@@ -578,5 +583,72 @@ footer .container .partener {
   }
   .header .containerr .img {
     display: none;
+  }
+}
+.groups {
+  margin-bottom: 5rem;
+  background: url("../../imgaes/Blue-circles.png") no-repeat, url("../../imgaes/circle-shapes.png") no-repeat, url("../../imgaes/Green-Circles.png") no-repeat, url("../../imgaes/circle-shapes.png") no-repeat, url("../../imgaes/Blue-circles.png") no-repeat, url("../../imgaes/circle-shapes.png") no-repeat;
+  background-position-y: 3%, 23%, 40%, 60%, 80%, 100%;
+}
+.groups .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+  row-gap: 2rem;
+}
+.groups .container .box {
+  width: 385px;
+  background: #FFFFFF;
+  box-shadow: 3px 3px 15px rgba(14, 29, 39, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.groups .container .box .img {
+  width: 100%;
+}
+.groups .container .box .img img {
+  width: 100%;
+}
+.groups .container .box .text {
+  padding: 1rem 1rem 2rem;
+  text-align: left;
+}
+.groups .container .box .text a {
+  color: var(--black);
+}
+.groups .container .box .text a h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.groups .container .box .text a:hover {
+  color: var(--main-color);
+}
+.groups .container .box .text p {
+  font-size: 1.1rem;
+  color: rgba(14, 29, 39, 0.6);
+  margin-bottom: 2rem;
+}
+.groups .container .box .readMap {
+  background: linear-gradient(180deg, #083863 0%, #0E1D27 100%);
+  box-shadow: 3px 3px 10px rgba(14, 29, 39, 0.2);
+  border-radius: 6px;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+}
+
+@media (max-width: 450px) {
+  .groups .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0;
+  }
+  .groups .container .box {
+    width: 90%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@ footer {
 
     .container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
         gap: 2rem;
 
         .info {
@@ -99,7 +99,7 @@ footer {
         }
         .social{
             display: flex;
-            gap: 1rem;
+            gap: 2rem;
             a{
                 i{
                     font-size: 2rem;
