@@ -83,7 +83,10 @@ nav {
 
     }
 }
-
+.nav-group{
+    background-image: none;
+    background-color: var(--background-2);
+}
 @media (max-width:991px) {
     nav {
         .container {

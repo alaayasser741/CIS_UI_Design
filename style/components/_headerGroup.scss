@@ -1,0 +1,72 @@
+.header{
+    height: 750px;
+    margin-bottom: 9rem;
+    background: url('../../imgaes/Blue-circles.png') no-repeat left,url('../../imgaes/circle-shapes.png') no-repeat left;
+    background-position-y: 25%, 75%;
+    .containerr{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .info{
+            padding-left: 6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            img{
+                width: 130px;
+            }
+            gap: 1rem;
+            span{
+                font-size: 4rem;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                span{
+                    color: var(--main-color);
+                }
+            }
+        }
+        .img{
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 28% 100%);
+            background-color: var(--black);
+            position: relative;
+
+            img{
+                width: 98.5%;
+                height: 98.8%;
+                float: right;
+                border-bottom: 15px solid;
+            }
+        }
+        }
+}
+@media (max-width:991px) {
+    .header{
+        background: url('../../imgaes/bg-img.webp') no-repeat center;
+        .containerr{
+            display: block;
+            position: relative;
+            height: 100%;
+            background-color: rgba($color: #000, $alpha: .7);
+            .info{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+                align-items: center;
+                padding: 0;
+                span{
+                    color: var(--white);
+                    text-align: center;
+                }
+}
+            .img{
+                display: none;
+            }
+        }
+    }
+}
