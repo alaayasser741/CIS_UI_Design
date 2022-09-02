@@ -559,7 +559,7 @@ footer .container .partener {
 
 @media (max-width: 991px) {
   .header {
-    background: url("../../imgaes/bg-img.webp") no-repeat center;
+    background: url("../imgaes/bg-img.webp") no-repeat center;
   }
   .header .containerr {
     display: block;
