@@ -737,4 +737,16 @@ footer .container .partener {
   100% {
     opacity: 0;
   }
+}
+@media (width < 768px) {
+  .loading {
+    justify-content: center;
+    text-align: center;
+  }
+  .loading h2 {
+    font-size: 3rem;
+  }
+  .loading .dynamic-txts {
+    font-size: 1.9rem;
+  }
 }/*# sourceMappingURL=style.css.map */
