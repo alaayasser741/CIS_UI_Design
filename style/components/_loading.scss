@@ -68,6 +68,7 @@
 }
 @media (width < 768px) {
     .loading{
+        display: flex;
         justify-content: center;
         text-align: center;
         h2{
