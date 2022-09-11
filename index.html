@@ -10,7 +10,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- FavIcon -->
     <link rel="icon" type="image/x-icon" href="./imgaes/CIS-Logo-1.png">
-    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Cis Team</title>
 </head>
 
@@ -39,7 +40,17 @@
             </div>
             <a href="#" class="btn">Newsletter</a>
             <div class="toggle">
-                <i class="fa-solid fa-bars"></i>
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6Z"
+                        fill="currentColor" />
+                    <path
+                        d="M4 18C4 17.4477 4.44772 17 5 17H19C19.5523 17 20 17.4477 20 18C20 18.5523 19.5523 19 19 19H5C4.44772 19 4 18.5523 4 18Z"
+                        fill="currentColor" />
+                    <path
+                        d="M11 11C10.4477 11 10 11.4477 10 12C10 12.5523 10.4477 13 11 13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H11Z"
+                        fill="currentColor" />
+                </svg>
             </div>
         </div>
     </nav>
@@ -79,99 +90,101 @@
     </div>
     <!-- Roadmap schedule -->
     <div class="schedule">
-        <a href="#" class="btn">Roadmap Schedule</a>
-        <a href="#" class="btn">Activity Schedule</a>
+        <button href="#" id="Roadmap" class="btn active">Roadmap Schedule</button>
+        <button href="#" id="Activity" class="btn">Activity Schedule</button>
     </div>
     <!-- Roadmap -->
     <div class="roadmap">
         <div class="container">
             <h2>Road Map Schedule</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Topic</th>
-                        <th>Deadline</th>
-                        <th>Slide</th>
-                        <th>Notes</th>
-                        <th>Video</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="shadowText">Aug 02, 2021</td>
-                        <td>What is the different between
-                            UI & UX? </td>
-                        <td class="shadowText">1 Day</td>
-                        <td><i class="fa-solid fa-file-pdf"></i></td>
-                        <td><i class="fa-solid fa-file-lines"></i></td>
-                        <td><i class="fa-solid fa-file-video"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="shadowText">Aug 03, 2021</td>
-                        <td>What is the different between
-                            UI & UX? </td>
-                        <td class="shadowText">1 Day</td>
-                        <td><i class="fa-solid fa-file-pdf"></i></td>
-                        <td><i class="fa-solid fa-file-lines"></i></td>
-                        <td><i class="fa-solid fa-file-video"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="shadowText">Aug 05, 2021</td>
-                        <td>What is the different between
-                            UI & UX? </td>
-                        <td class="shadowText">1 Day</td>
-                        <td><i class="fa-solid fa-file-pdf"></i></td>
-                        <td><i class="fa-solid fa-file-lines"></i></td>
-                        <td><i class="fa-solid fa-file-video"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="shadowText">Aug 07, 2021</td>
-                        <td>What is the different between
-                            UI & UX? </td>
-                        <td class="shadowText">1 Day</td>
-                        <td><i class="fa-solid fa-file-pdf"></i></td>
-                        <td><i class="fa-solid fa-file-lines"></i></td>
-                        <td><i class="fa-solid fa-file-video"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="shadowText">Aug 10, 2021</td>
-                        <td>What is the different between
-                            UI & UX? </td>
-                        <td class="shadowText">1 Day</td>
-                        <td><i class="fa-solid fa-file-pdf"></i></td>
-                        <td><i class="fa-solid fa-file-lines"></i></td>
-                        <td><i class="fa-solid fa-file-video"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="shadowText">Aug 12, 2021</td>
-                        <td>What is the different between
-                            UI & UX? </td>
-                        <td class="shadowText">1 Day</td>
-                        <td><i class="fa-solid fa-file-pdf"></i></td>
-                        <td><i class="fa-solid fa-file-lines"></i></td>
-                        <td><i class="fa-solid fa-file-video"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="shadowText">Aug 13, 2021</td>
-                        <td>What is the different between
-                            UI & UX? </td>
-                        <td class="shadowText">1 Day</td>
-                        <td><i class="fa-solid fa-file-pdf"></i></td>
-                        <td><i class="fa-solid fa-file-lines"></i></td>
-                        <td><i class="fa-solid fa-file-video"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="shadowText">Aug 15, 2021</td>
-                        <td>What is the different between
-                            UI & UX? </td>
-                        <td class="shadowText">1 Day</td>
-                        <td><i class="fa-solid fa-file-pdf"></i></td>
-                        <td><i class="fa-solid fa-file-lines"></i></td>
-                        <td><i class="fa-solid fa-file-video"></i></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table__scrollContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Topic</th>
+                            <th>Deadline</th>
+                            <th>Slide</th>
+                            <th>Notes</th>
+                            <th>Video</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="shadowText">Aug 02, 2021</td>
+                            <td class="--width-Td">What is the different between
+                                UI & UX? </td>
+                            <td class="shadowText">1 Day</td>
+                            <td><i class="fa-solid fa-file-pdf"></i></td>
+                            <td><i class="fa-solid fa-file-lines"></i></td>
+                            <td><i class="fa-solid fa-file-video"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="shadowText">Aug 03, 2021</td>
+                            <td>What is the different between
+                                UI & UX? </td>
+                            <td class="shadowText">1 Day</td>
+                            <td><i class="fa-solid fa-file-pdf"></i></td>
+                            <td><i class="fa-solid fa-file-lines"></i></td>
+                            <td><i class="fa-solid fa-file-video"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="shadowText">Aug 05, 2021</td>
+                            <td>What is the different between
+                                UI & UX? </td>
+                            <td class="shadowText">1 Day</td>
+                            <td><i class="fa-solid fa-file-pdf"></i></td>
+                            <td><i class="fa-solid fa-file-lines"></i></td>
+                            <td><i class="fa-solid fa-file-video"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="shadowText">Aug 07, 2021</td>
+                            <td>What is the different between
+                                UI & UX? </td>
+                            <td class="shadowText">1 Day</td>
+                            <td><i class="fa-solid fa-file-pdf"></i></td>
+                            <td><i class="fa-solid fa-file-lines"></i></td>
+                            <td><i class="fa-solid fa-file-video"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="shadowText">Aug 10, 2021</td>
+                            <td>What is the different between
+                                UI & UX? </td>
+                            <td class="shadowText">1 Day</td>
+                            <td><i class="fa-solid fa-file-pdf"></i></td>
+                            <td><i class="fa-solid fa-file-lines"></i></td>
+                            <td><i class="fa-solid fa-file-video"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="shadowText">Aug 12, 2021</td>
+                            <td>What is the different between
+                                UI & UX? </td>
+                            <td class="shadowText">1 Day</td>
+                            <td><i class="fa-solid fa-file-pdf"></i></td>
+                            <td><i class="fa-solid fa-file-lines"></i></td>
+                            <td><i class="fa-solid fa-file-video"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="shadowText">Aug 13, 2021</td>
+                            <td>What is the different between
+                                UI & UX? </td>
+                            <td class="shadowText">1 Day</td>
+                            <td><i class="fa-solid fa-file-pdf"></i></td>
+                            <td><i class="fa-solid fa-file-lines"></i></td>
+                            <td><i class="fa-solid fa-file-video"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="shadowText">Aug 15, 2021</td>
+                            <td>What is the different between
+                                UI & UX? </td>
+                            <td class="shadowText">1 Day</td>
+                            <td><i class="fa-solid fa-file-pdf"></i></td>
+                            <td><i class="fa-solid fa-file-lines"></i></td>
+                            <td><i class="fa-solid fa-file-video"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -227,7 +240,7 @@
     <div class="loading">
         <img src="imgaes/CIS-Logo-1.png" alt="logo">
         <h2>Cis Team</h2>
-            <p class="dynamic-txts">Your Path To <span>Success</span></p>
+        <p class="dynamic-txts">Your Path To <span>Success</span></p>
 
     </div>
     <script src="./script/main.js"></script>

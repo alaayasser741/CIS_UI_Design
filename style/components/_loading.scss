@@ -49,7 +49,7 @@
     -webkit-animation: opaciity 1s forwards;
 }
 .active-loading-2{
-    display: none;
+    display: none !important;
 }
 @keyframes typing {
     100%{

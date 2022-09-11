@@ -26,7 +26,10 @@
                 -o-transform: translateX(-50%);
             }
         }
-
+.table__scrollContainer{
+    overflow-x: auto;
+    min-height: 700px;
+}
 
         table {
             border: 1px solid rgba(14, 29, 39, 0.2);
@@ -38,14 +41,17 @@
             -moz-border-radius: 7px;
             -ms-border-radius: 7px;
             -o-border-radius: 7px;
-
+            overflow-x: scroll;
             td,
             th {
                 padding: 2rem;
                 font-size: 1.5rem;
                 border-bottom: 1px solid rgba(14, 29, 39, 0.2);
                 text-align: left;
-
+                a{
+                    color: black;
+                    text-decoration: underline;
+                }
                 i {
                     font-size: 3rem;
                     cursor: pointer;
@@ -71,6 +77,25 @@
                 color: #777;
             }
 
+        }
+    }
+}
+@media (width < 991px) {
+    .table__scrollContainer{
+        border: 1px solid rgba(14,29,39,.2);
+    }
+}
+table{
+    .--width-Td{
+        min-width: 330px;
+    }
+}
+@media (width < 768px) {
+    .table__scrollContainer{
+        table{
+            td{
+                width: 390px
+            }
         }
     }
 }

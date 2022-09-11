@@ -87,6 +87,15 @@ nav {
     background-image: none;
     background-color: var(--background-2);
 }
+@media (max-width:1199px){
+    nav{
+        .container{
+            ul{
+                gap: 1rem !important;
+            }
+        }
+    }
+}
 @media (max-width:991px) {
     nav {
         .container {
@@ -165,4 +174,5 @@ nav {
     top: 0;
     left: 0;
     display: none;
+    position: fixed;
 }
